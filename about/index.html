@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan - ABOUT PAGE</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <!-- nav section start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(2, 27, 27);">
+      <div class="container-fluid text-light">
+        <a class="navbar-brand" style="color: green;" href="#"><h4>FANATECH</h4></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/about/">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Others
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+                <li><a class="dropdown-item" href="/gallery/">Gallery</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/sosmed/">Sosmed</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav section end -->
+
+<!-- first layout start -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff; /* Warna teks putih */
+            line-height: 1.6;
+        }
+
+        /* Bagian Tentang Saya */
+        #about {
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .about-content {
+            flex: 2;
+        }
+
+        .about-content h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #00BCD4; /* Warna aksen biru */
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #eee;
+        }
+
+        .about-content ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about-content li {
+            background-color: #212121;
+            color: #fff;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-content li:hover {
+            background-color: #00BCD4;
+            color: #121212;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            #about {
+                flex-direction: column;
+                padding: 40px;
+            }
+
+            .about-image {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .about-content h2 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+
+    <section id="about">
+        <div class="about-image">
+            <img src="/assets/foto formal.png" alt="Foto Saya">
+        </div>
+        <div class="about-content">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo! Saya FARHAN NAZHIF AHMAD, seorang teknisi berpengalaman dan berdedikasi dalam menyediakan solusi
+                instalasi dan perbaikan yang terpercaya. Dengan semangat untuk memberikan yang terbaik, saya
+                menawarkan berbagai layanan untuk memenuhi kebutuhan Anda.
+            </p>
+            <p>
+                Saya memiliki keahlian dalam berbagai bidang, termasuk:
+            </p>
+            <ul>
+                <li><i class="fas fa-bolt"></i> Instalasi Listrik</li>
+                <li><i class="fas fa-camera"></i> Pemasangan CCTV</li>
+                <li><i class="fas fa-solar-panel"></i> Panel Surya</li>
+                <li><i class="fas fa-laptop"></i> Servis Komputer & Laptop</li>
+                <li><i class="fas fa-snowflake"></i> Servis AC & Kulkas</li>
+                <li><i class="fas fa-power-off"></i> Power Backup / UPS</li>
+                <li><i class="fas fa-scroll"></i> LED Running Text</li>
+                <li><i class="fas fa-tools"></i> Instalasi Lainnya</li>
+            </ul>
+            <p>
+                Saya percaya bahwa kualitas dan kepuasan pelanggan adalah yang utama. Mari berdiskusi tentang
+                bagaimana saya dapat membantu Anda!
+            </p>
+        </div>
+    </section>
+
+<style>
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #bb86fc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+</style>
+    <footer>
+        &copy; 2024 About | Designed by <a href="#">Farhan</a>
+    </footer>
+
+<!-- first layout end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

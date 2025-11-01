@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan - CONTACT PAGE</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <!-- nav section start -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgb(2, 27, 27);">
+      <div class="container-fluid text-light">
+        <a class="navbar-brand" style="color: green;" href="#"><h4>FANATECH</h4></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Others
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+                <li><a class="dropdown-item" href="/gallery/">Gallery</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/sosmed/">Sosmed</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav section end -->
+
+<!-- first layout start -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #181818; /* Darker background */
+            color: #fff;
+            line-height: 1.7;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container {
+            width: 85%; /* Slightly wider container */
+            margin: auto;
+            overflow: hidden;
+            padding: 60px 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center align */
+            background-color: #222; /* Darker section background */
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+            padding: 30px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            width: 35%; /* Slightly wider info section */
+            padding: 30px;
+            border-right: 1px solid #333; /* Subtle divider */
+        }
+
+        .contact-info h3 {
+            color: #00bcd4; /* Accent color for headings */
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+
+        .contact-info i {
+            margin-right: 12px;
+            color: #00bcd4;
+            font-size: 1.2em;
+            vertical-align: middle;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            width: 65%; /* Slightly narrower form section */
+            padding: 30px;
+        }
+
+        .contact-form h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #00bcd4;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form textarea:focus {
+            background-color: #444;
+            outline: none; /* Remove focus outline */
+        }
+
+        .contact-form textarea {
+            height: 180px;
+            resize: vertical; /* Allow vertical resizing */
+        }
+
+        .contact-form button {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #00a0b0;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 40px 0;
+            }
+
+            .contact-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .contact-info {
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 20px;
+                border-right: none;
+            }
+
+            .contact-form {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .contact-info h3,
+            .contact-form h3 {
+                font-size: 1.5em;
+            }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                padding: 12px;
+                margin-bottom: 20px;
+            }
+
+            .contact-form button {
+                padding: 12px 20px;
+            }
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <section class="contact-section">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Get in touch for reliable electrical installations, CCTV systems, solar panel setups, computer and laptop repairs, AC and refrigerator servicing, power backup solutions, LED running text displays, and a wide range of other installation services. We're here to provide expert solutions tailored to your needs.</p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    X9M3+RV2, Jl. Pucung, RT.1/RW.1, Bambankerep, Kec. Ngaliyan, Kota Semarang, Jawa Tengah 50211,<br>
+                    Kost Pak Wiwin No 1.
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    085964426936
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    farhannazhifahmad@gmail.com
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <form>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Type your Message..."></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+<style>
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #bb86fc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+</style>
+    <footer>
+        &copy; 2024 Contact | Designed by <a href="#">Farhan</a>
+    </footer>
+<!-- first layout end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
